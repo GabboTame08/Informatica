@@ -19,7 +19,7 @@ int main(){
     int totpersone;
     double smp[3];
     double sup[3];
-    double mediapers=0;
+    double mediapersone=0;
     double somma=0;
     double mediasup=0;
     double mediatot = 0;
@@ -37,24 +37,19 @@ int main(){
         printf("Inserisci la larghezza del tavvolo numero %d: \n",i+1);
         scanf("%lf",&t[i].larg);
     }
-
-    //calcolo superficie media per persona
     for(int i=0;i<4;i++){
         smp[i] = (t[i].lun*t[i].larg)/t[i].maxpersone;
         printf("La superficie media per persona sul tavolo %d e' %.2f metri quadrati.\n",i+1,smp[i]);
     }
-    //calcolo media superficie per tavolo
     for(int i=0;i<4;i++){
         sup[i] = t[i].lun/t[i].larg;
         somma+=sup[i];
     }
     mediasup = somma/4;
-    //calcolo media persone per tavolo
     for(int i=0;i<4;i++){
-        mediapers = t[i].maxpersone/4;
+        mediapersone = t[i].maxpersone/4;
     }
-    //calcolo superficie media per persona su totale tavoli
-    mediatot = mediasup/mediapers;
+    mediatot = mediasup/mediapersone;
 
     printf("La superficie media per persona sul totale dei 4 tavoli e' %.2f metri quadrati.",mediatot);
 
