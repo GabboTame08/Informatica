@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+class Counter{
+
+
+    private:
+        int value;
+
+    public:
+    Counter(){
+        cout << "Metodo costruttore \n";
+        value = 0;
+    }
+    ~Counter(){
+        cout <<  "Oggetto distrutto \n";
+    }
+    int getValue (){
+        return value;
+    }
+    void increase (int n){
+        value += n;
+    }
+};
+
+
+int main(){
+
+    Counter c1;
+    
+    cout << "Contatore 1: "<< c1.getValue() <<"\n";
+    for(int i=0; i<100; i++){
+        c1.increase(1);
+        cout << "Contatore 1: "<< c1.getValue() <<"\n";
+    }
+
+    return 0;
+}
