@@ -6,11 +6,11 @@ class Counter{
     private:
         int value;
     public:
-        Counter(){};
-        ~Counter(){};
+        Counter();
+        ~Counter();
 
-    int getValue (){};
-    void increase (int n){};
+    int getValue ();
+    void increase (int n);
     
 };
 #endif
