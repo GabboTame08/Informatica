@@ -1,30 +1,7 @@
-#include "couter.h"
+#include "counter.h"
 #include <iostream>
 
 using namespace std;
-
-class Counter{
-
-
-    private:
-        int value;
-
-    public:
-    Counter(){
-        cout << "Metodo costruttore \n";
-        value = 0;
-    }
-    ~Counter(){
-        cout <<  "Oggetto distrutto \n";
-    }
-    int getValue (){
-        return value;
-    }
-    void increase (int n){
-        value += n;
-    }
-};
-
 
 int main(){
 

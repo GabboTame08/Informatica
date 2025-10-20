@@ -1,5 +1,7 @@
-#include "coutner.h"
+#include "counter.h"
 #include <iostream>
+
+using namespace std;
 
 Counter::Counter(){
     cout << "Metodo costruttore \n";
