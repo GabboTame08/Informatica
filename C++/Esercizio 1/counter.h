@@ -11,6 +11,6 @@ class Counter{
 
     int getValue (){};
     void increase (int n){};
-
-
+    
 };
+#endif
