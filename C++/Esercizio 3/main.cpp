@@ -6,6 +6,7 @@ il primo con lunghezze dei lati 1 e 2, il secondo con 2 e 3, il terzo con 3 e 4 
 
 #include <iostream>
 #include "Rettangolo.h"
+
 using namespace std;
 
 int main() {
