@@ -20,7 +20,7 @@ int main() {
 
     for(int i=0; i<5; i++){
         cout << "Cerchio con raggio: " << c1[i].getRaggio();
-        cout << "Circonferenza = " << c1[i].circonferenza();
+        cout << " Circonferenza = " << c1[i].circonferenza();
         cout << " Area = " << c1[i].area() << "\n";
 
     }
