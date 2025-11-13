@@ -10,24 +10,25 @@ stampare la situazione finale delle scarpe; si consideri che
 inizialmente tutti gli stretch sono slacciati.
 */
 
-#include "Scarpe.h"
+#ifndef SCARPE_H
+#define SCARPE_H
 
-int main() {
-    srand(time(0));
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
 
-    Scarpe s1(38);
-    Scarpe s2(41);
+class Scarpe {
+    private:
+        int dimensione;
+        int destra[3];
+        int sinistra[3];
 
-    for (int i = 0; i < 10; i++) {
-        if (rand() % 2)
-            s1.cambiaStretchCasuale();
-        else
-            s2.cambiaStretchCasuale();
-    }
+public:
+    Scarpe(int dim);
+    void cambiaStretchCasuale();
+    void stampa() const;
+};
 
-    cout << "Situazione finale delle scarpe:\n";
-    s1.stampa();
-    s2.stampa();
-
-    return 0;
-}
+#endif
+ 
