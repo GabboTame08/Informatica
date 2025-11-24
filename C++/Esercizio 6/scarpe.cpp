@@ -19,7 +19,7 @@ void Scarpe::cambiaStretchCasuale() {
         sinistra[n] =! sinistra[n];
 }
 
-void Scarpe::stampa() const {
+void Scarpe::stampa() {
     cout << "Scarpe (dimensione " << dimensione << ")\n";
     cout << "  Destra:  ";
     for (int i = 0; i < 3; i++)

@@ -27,7 +27,7 @@ class Scarpe {
 public:
     Scarpe(int dim);
     void cambiaStretchCasuale();
-    void stampa() const;
+    void stampa();
 };
 
 #endif
