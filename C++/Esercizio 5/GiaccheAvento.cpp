@@ -1,5 +1,5 @@
 #include <iostream>
-#include "GiaccheAVento.h"
+#include "GiaccheAvento.h"
 
 
 GiaccheAVento::GiaccheAVento(){
@@ -36,6 +36,6 @@ int GiaccheAVento::getTaglia(){
   return taglia;
 }
 
-int GiaccheAVento::getpercentualeChiusura(){
+int GiaccheAVento::getPercentualeChiusura(){
   return percentualeChiusura;
 }

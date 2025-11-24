@@ -10,10 +10,12 @@ stampare la situazione finale delle scarpe; si consideri che
 inizialmente tutti gli stretch sono slacciati.
 */
 
-#include "Scarpe.h"
+#include "scarpe.h"
+
+using namespace std;
 
 int main() {
-    srand(time(0));
+    srand(time(NULL));
 
     Scarpe s1(38);
     Scarpe s2(41);
