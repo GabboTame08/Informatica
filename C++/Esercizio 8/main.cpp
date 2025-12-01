@@ -20,27 +20,33 @@ int main(){
     if(n==1){
         t.pulsanterosso();
         cout << "Il televisore e' acceso." << endl;
-        while(int x != 0){ 
+        do{ 
             cout << "MENU': 1(imposta canale); 2(Canale Successivo); 3(Canale Precedente); 4(Alza Volume); 5(Abbassa Volume); 0(Esci)" << endl;
             cout << "Cosa vuoi fare? ";
             cin >> scelta;
             if(scelta==1){
                 cout << "Scegli un canale: ";
                 cin >> e;
+                t.impostaCanale(e);
             }
             if(scelta == 2){
-                cout << "Vuoi andare avanti o indietro (1 per avanti, 0 per indietro)?";
-                cin >> r,"\n";
-                if(r==1){
-                    canaleSuccessivo();
-                }
-                if(r==0){
-                    canalePrecedente();
-                }
+                
+                cout << "Sei al canale:" << t.canaleSuccessivo() << endl;   
             }
-        }
-        cout << "Vuoi alzare o abbassare il volume?";
-    }
+            if(scelta == 3){
+                
+                cout << "Sei al canale: " << t.canalePrecedente() << endl;   
+            }
+            if(scelta == 4){
+                
+                cout << "Volume" << t.aumentaVolume() << endl;   
+            }
+            if(scelta == 5){
+                
+                cout << "Volume" << t.abbassaVolume() << endl;   
+            }
+        }while(scelta != 0);
+    }  
 
     return 0;
 }
