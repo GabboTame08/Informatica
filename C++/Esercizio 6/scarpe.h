@@ -16,6 +16,7 @@ inizialmente tutti gli stretch sono slacciati.
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+
 using namespace std;
 
 class Scarpe {
