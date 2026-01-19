@@ -16,16 +16,18 @@ void ApplicationView::draw()
 	std::cout << "  ID VIEW:"<< this << std::endl;
 	std::cout << "  ---------------------------------------------------- " << std::endl;
 */
-	std::cout << "  ---------------------------------------------------- " << std::endl;
-	std::cout << " |                   MVC Applicatione                  |" <<std::endl;
-	std::cout << "  ---------------------------------------------------- " << std::endl;
-	std::cout << " | COMANDI:   [0]Esci - [1]Incrementa - [2]Decrementa |"<<std::endl;
-	std::cout << "  ---------------------------------------------------- " << std::endl;
-	std::cout << "  -------------- " << std::endl;
+	std::cout << "  --------------------------------------------------------------" << std::endl;
+	std::cout << " |                 Creazione Carta d'identita'                  |" <<std::endl;
+	std::cout << "  --------------------------------------------------------------" << std::endl;
+	std::cout << "  --------------------------------------------------------------" << std::endl;
+	std::cout << " | COMANDI:   [0]Esci   -   [1]Inserisci Dati   -   [2]Stampa   |"<<std::endl;
+	std::cout << "  --------------------------------------------------------------" << std::endl;
+	/*std::cout << "  -------------- " << std::endl;
 	std::cout << " | VALORE: " <<  ((ApplicationModel*)model)->getValue() <<"\t|" <<std::endl;
-	std::cout << "  -------------- " << std::endl;
+	std::cout << "  -------------- " << std::endl;*/
 	std::cout << "  ------------------------------ " << std::endl;
 	std::cout << " | INSERIRE il comando scelto: ";
+
 
 
 }
